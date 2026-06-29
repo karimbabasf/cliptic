@@ -1,0 +1,43 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Rust / Tauri
+target/
+src-tauri/target/
+src-tauri/gen/
+
+# Whisper models (large, downloaded at setup — never committed)
+models/
+*.bin
+*.ggml
+
+# Bundled FFmpeg sidecar binaries (fetched at setup)
+src-tauri/binaries/
+
+# Sample / scratch media
+scratch/
+*.mp4
+*.mov
+*.wav
+*.mp3
+!docs/**/*.mp4
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+*.log
+npm-debug.log*
